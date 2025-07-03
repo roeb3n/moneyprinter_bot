@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import os
 
-TOKEN = os.environ["7281251814:AAGB3_N9EmjKVXHGw2cSZ9VBy1oebgU60F0"]
+TOKEN = os.environ["BOT_TOKEN"]  # Secure: token is read from environment
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("💸 Welcome to MoneyPrinter! Type /print to start printing...")
